@@ -3,8 +3,8 @@ package com.mpantoja.categories.sandboxhex.commnons.config;
 import com.mpantoja.categories.sandboxhex.domain.ports.in.CategoryServicePort;
 import com.mpantoja.categories.sandboxhex.domain.ports.out.CategoryPersistencePort;
 import com.mpantoja.categories.sandboxhex.domain.usecase.CategoryUseCase;
-import com.mpantoja.categories.sandboxhex.infrastructure.adapter.CategoryPersistenceAdapter;
-import com.mpantoja.categories.sandboxhex.infrastructure.repository.CategoryEntityJpaRepository;
+import com.mpantoja.categories.sandboxhex.infrastructure.adapter.out.persistence.category.CategoryPersistenceAdapter;
+import com.mpantoja.categories.sandboxhex.infrastructure.adapter.out.persistence.category.repository.CategoryEntityJpaRepository;
 import lombok.RequiredArgsConstructor;
 import org.modelmapper.ModelMapper;
 import org.springframework.context.annotation.Bean;
@@ -23,7 +23,7 @@ public class BeanConfig {
     }
 
     @Bean
-    CategoryServicePort categoryServicePort(){
-        return new CategoryUseCase(categoryPersistencePort());
+    CategoryServicePort categoryServicePort(CategoryPersistencePort categoryPersistencePort){
+        return new CategoryUseCase(categoryPersistencePort);
     }
 }

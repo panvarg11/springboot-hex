@@ -1,4 +1,4 @@
-package com.mpantoja.categories.sandboxhex.infrastructure.entity;
+package com.mpantoja.categories.sandboxhex.infrastructure.adapter.out.persistence.category.entity;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;

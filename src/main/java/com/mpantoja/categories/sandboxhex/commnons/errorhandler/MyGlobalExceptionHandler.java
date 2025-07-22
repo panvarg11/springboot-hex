@@ -1,4 +1,4 @@
-package com.mpantoja.categories.sandboxhex.infrastructure.exceptionhandling;
+package com.mpantoja.categories.sandboxhex.commnons.errorhandler;
 
 import com.mpantoja.categories.sandboxhex.domain.exceptions.DomainException;
 import com.mpantoja.categories.sandboxhex.domain.exceptions.ResourceNotFoundException;

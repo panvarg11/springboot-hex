@@ -1,4 +1,4 @@
-package com.mpantoja.categories.sandboxhex.infrastructure.controller;
+package com.mpantoja.categories.sandboxhex.infrastructure.adapter.in.admincatgory;
 
 import com.mpantoja.categories.sandboxhex.application.dto.CategoryDTO;
 import com.mpantoja.categories.sandboxhex.application.service.intf.ICategoryService;

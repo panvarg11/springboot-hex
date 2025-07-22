@@ -1,10 +1,10 @@
-package com.mpantoja.categories.sandboxhex.infrastructure.adapter;
+package com.mpantoja.categories.sandboxhex.infrastructure.adapter.out.persistence.category;
 
 import com.mpantoja.categories.sandboxhex.domain.model.category.Category;
 import com.mpantoja.categories.sandboxhex.domain.model.category.CategoryResponse;
 import com.mpantoja.categories.sandboxhex.domain.ports.out.CategoryPersistencePort;
-import com.mpantoja.categories.sandboxhex.infrastructure.entity.CategoryEntity;
-import com.mpantoja.categories.sandboxhex.infrastructure.repository.CategoryEntityJpaRepository;
+import com.mpantoja.categories.sandboxhex.infrastructure.adapter.out.persistence.category.entity.CategoryEntity;
+import com.mpantoja.categories.sandboxhex.infrastructure.adapter.out.persistence.category.repository.CategoryEntityJpaRepository;
 import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
 import org.modelmapper.ModelMapper;

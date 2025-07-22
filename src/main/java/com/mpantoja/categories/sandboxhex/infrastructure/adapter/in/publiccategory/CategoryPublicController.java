@@ -1,4 +1,4 @@
-package com.mpantoja.categories.sandboxhex.infrastructure.controller;
+package com.mpantoja.categories.sandboxhex.infrastructure.adapter.in.publiccategory;
 
 import com.mpantoja.categories.sandboxhex.application.dto.CategoryDTO;
 import com.mpantoja.categories.sandboxhex.application.dto.CategoryDTOResponse;
