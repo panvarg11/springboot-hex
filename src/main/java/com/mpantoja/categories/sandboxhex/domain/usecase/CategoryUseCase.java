@@ -39,7 +39,7 @@ public class CategoryUseCase implements CategoryServicePort {
     public Category deleteCategoryById(Long categoryId) {
         Category deleted = categoryPersistencePort.deleteCategoryById(categoryId);
         if(deleted==null) throw new ResourceNotFoundException("Category", "ID", String.valueOf(categoryId));
-        return deleted;
+        return deleted;  //comment
     }
 
 
